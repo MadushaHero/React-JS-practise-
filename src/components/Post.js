@@ -2,6 +2,13 @@ import React,{Component} from 'react';
 
 class Post extends Component  {
 
+    state ={
+
+        "Name" : "Madusha",
+        "age": 25 ,
+        "skills" :['React','Java script','HTML']
+    }
+
 render () {
 
     return (
@@ -11,6 +18,9 @@ render () {
                 
 
                 {new Date().toLocaleDateString()}
+                <p> Name :- {this.state.Name}</p>
+                <p> Age :- {this.state.age}</p>
+                <p> Skills:- {this.state.skills.join(',')}</p>
         </div>
     )
 }
