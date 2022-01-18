@@ -81,6 +81,8 @@ render () {
 
                 <br/>
                 <Student name='Smith jhones' email='123@dog.com' phone='134125'/>
+                <Student name='madusha' email='123@dogw.com' phone='13417825'/>
+                
         </div>
     )
 }
