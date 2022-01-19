@@ -14,7 +14,7 @@ class Student extends Component {
                  <h1>Student Details</h1>
                  <p>Name: {name}</p>
                  <p>Email: {email}</p>
-                 <p>Phone: {phone }</p>
+                 <p>Phone: {phone}</p>
 
 
              </div>

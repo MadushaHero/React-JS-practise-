@@ -1,16 +1,42 @@
+
 import logo from './logo.svg';
 import './App.css';
-import './components/Post'
-import Post from './components/Post';
+import React ,{Component} from 'react';
 import Teacher from './components/Teacher';
+import Employee from './components/Employee';
+import Post from './components/Post';
 
-function App() {
-  return (
-    <div className="App">
-      <Post />
-      <Teacher name= 'Madusha' email= 'madu@123.com' phone='01026354'/>
-    </div>
-  );
-}
+class App extends Component {
+
+  state={
+    employees:[
+
+      {id:1,name:'jeniffer',email:'madusha@123',phone:'0714243328415'},
+      {id:2,name:'jenifferjagath',email:'maddusha@123',phone:'071324232248415'}
+    ]
+  }
+
+  render() {
+
+    return (
+      <div className="App">
+
+        <Employee employees={this.state.employees} />
+
+        
+  
+       
+      </div>
+    );
+
+
+  }
+
+
+ 
+
+  }
+
+
 
 export default App;
