@@ -9,7 +9,7 @@ class Employee extends Component {
         const employList  = employees.map(Employee=>{
             return (
 
-                <div key={Employee.id}>
+                <div class='emplist' key={Employee.id}>
                     <p>Name : {Employee.name}</p>
                     <p>Email : {Employee.email}</p>
                     <p>Phone : {Employee.phone}</p>

@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import './AddEmployee.css';
 
 class AddEmployee extends Component {
 
@@ -24,7 +25,7 @@ class AddEmployee extends Component {
         return (
             <div>
                 <h1> Add New Employee</h1>
-                   <form onSubmit={this.handleSubmit}>
+                   <form className="empform" onSubmit={this.handleSubmit}>
 
                      Name : <input type="text" name="name" onChange={this.handleChange}/> <br/>
                      Email : <input type="text" name="email" onChange={this.handleChange} /> <br/>
