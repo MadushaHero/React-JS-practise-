@@ -14,7 +14,8 @@ class App extends Component {
 
       {id:1,name:'jeniffer',email:'madusha@123',phone:'0714243328415'},
       {id:2,name:'jenifferjagath',email:'maddusha@123',phone:'071324232248415'}
-    ]
+    ],
+    formVisible:true
   }
 
   addEmployee =(employee)=> {
@@ -28,14 +29,24 @@ class App extends Component {
 
   }
 
+  handleClose=(e)=> {
+
+    this.setState({
+      formVisible:false
+
+    })
+  }
+
   render() {
 
     return (
       <div className="App">
 
-        <AddEmployee addEmployee={this.addEmployee} />
+        <button onClick={this.handleClose}>Close</button>
 
-        <Employee employees={this.state.employees} />
+        {this.state.formVisible?<AddEmployee addEmployee={this.addEmployee} /> :null }
+
+        <Employee employees={this.state.employees} /> 
 
         
   
