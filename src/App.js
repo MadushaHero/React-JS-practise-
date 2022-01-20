@@ -5,6 +5,7 @@ import React ,{Component} from 'react';
 import Teacher from './components/Teacher';
 import Employee from './components/Employee';
 import Post from './components/Post';
+import  AddEmployee from './components/AddEmployee';
 
 class App extends Component {
 
@@ -16,10 +17,23 @@ class App extends Component {
     ]
   }
 
+  addEmployee =(employee)=> {
+
+    employee.id = Math.random()
+    let employees = [...this.state.employees,employee]
+    this.setState({
+             employees:employees
+
+    })
+
+  }
+
   render() {
 
     return (
       <div className="App">
+
+        <AddEmployee addEmployee={this.addEmployee} />
 
         <Employee employees={this.state.employees} />
 
