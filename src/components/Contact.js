@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import Coloured from "./hoc/Coloured";
 
 
 class Contact extends Component {
@@ -14,4 +15,4 @@ class Contact extends Component {
 }
 
 
-export default Contact;
+export default Coloured (Contact);
