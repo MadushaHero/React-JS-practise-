@@ -14,7 +14,7 @@ import User from './components/User'
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
           <Navbar />
         <Routes>
           <Route exact path="/" element={<Home/>}/>
@@ -25,7 +25,7 @@ const App = () => {
    
         </Routes>
     
-    </Router>
+    </HashRouter>
   );
 }
 
